@@ -1,17 +1,24 @@
 body {
+    background-color: oldlace;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
   }
   
-  textarea{
-    background: transparent;
+  textarea {
+    /* background: transparent; */
+    /* background-color: slategray; */
     border: none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
   }
+
+  textarea:focus {
+    border: 3px solid #06AED5;
+  }
+  
   
   .jumbotron {
     text-align: center;
@@ -37,27 +44,29 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: lightgray;
     color: #000000;
     border-top: 1px dashed #000000;
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: slategray;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color:cornflowerblue;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: yellowgreen;
     color: white;
   }
+
   
-  .saveBtn {
+  .save {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -65,7 +74,7 @@ body {
     color: white;
   }
   
-  .saveBtn i:hover {
+  .save i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
